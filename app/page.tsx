@@ -1,381 +1,242 @@
-export default function HomePage() {
-  const universities = [
-    {
-      name: "University of Belgrade",
-      desc: "Sırbistan’ın en köklü ve prestijli devlet üniversitelerinden biri.",
-    },
-    {
-      name: "Medika College",
-      desc: "Sağlık bilimleri ve uygulamalı eğitim alanında modern yaklaşım.",
-    },
-    {
-      name: "FBE",
-      desc: "İşletme, ekonomi ve girişimcilik alanlarında güçlü akademik yapı.",
-    },
-    {
-      name: "MSS Modern Business School",
-      desc: "Modern iş dünyasına yönelik uygulamalı eğitim programları.",
-    },
-  ];
+const phone = "381631673885";
+const message = "Merhaba, Belgrad’da eğitim hakkında bilgi almak istiyorum.";
 
-  const features = [
-    "Yıllara göre artmayan ve uygun fiyatlı ücretler",
-    "Bologna süreci onaylanmış mavi diploma",
-    "Uluslararası geçerlilik",
-    "YÖK denkliği",
-    "Oturum ve çalışma izinleri",
-    "Schengen ülkelerine kolaylıkla gidiş imkanı",
-    "Eğitim süresinde tam destek",
-  ];
+const whatsapp = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-  const programs = [
-    "Lisans Programları",
-    "Yüksek Lisans Programları",
-    "Doktora Programları",
-    "Yaz Okulu",
-  ];
+const benefits = [
+  "YÖK Denkliği",
+  "Mavi Diploma",
+  "Bologna Süreci",
+  "Sabit Eğitim Ücretleri",
+  "Taksitli Ödeme İmkanı",
+  "Oturum ve Çalışma İzni",
+  "Schengen Avantajı",
+  "Eğitim Süresince Destek",
+];
 
-  const faqs = [
-    {
-      q: "Ücretler yıllık artıyor mu?",
-      a: "Program ücretleri yıllık olarak sabitlenmekte olup öğrencilere süreç başında detaylı bilgilendirme yapılmaktadır.",
-    },
-    {
-      q: "Eğitim dili nedir?",
-      a: "Programlara göre İngilizce ve Sırpça seçenekleri bulunmaktadır.",
-    },
-    {
-      q: "YÖK denkliği mevcut mu?",
-      a: "Belirli üniversite ve programlarda YÖK kriterlerine uygun denklik süreçleri bulunmaktadır.",
-    },
-    {
-      q: "Konaklama desteği sağlanıyor mu?",
-      a: "Belgrad’da konaklama, oturum ve öğrenci yaşamı konusunda danışmanlık sağlanmaktadır.",
-    },
-  ];
+const universities = [
+  "University of Belgrade",
+  "Medika College",
+  "Faculty of Business Economics and Entrepreneurship",
+  "MSS Modern Business School",
+];
 
+const programs = [
+  "Tıp",
+  "Diş Hekimliği",
+  "Yazılım Mühendisliği",
+  "Psikoloji",
+  "İşletme",
+  "Mimarlık",
+  "Türkoloji",
+  "MBA",
+];
+
+const faqs = [
+  {
+    q: "Sırbistan’da alınan diplomalar Türkiye’de geçerli mi?",
+    a: "Üniversite ve programa bağlı olarak YÖK kriterlerine uygun denklik süreçleri bulunmaktadır. Öğrenciler başvuru öncesinde detaylı şekilde bilgilendirilmektedir.",
+  },
+  {
+    q: "Türkçe programlar mevcut mu?",
+    a: "Evet. Özellikle Türkoloji bölümü tamamen Türkçe eğitim vermektedir. Programın lisans, yüksek lisans ve doktora seçenekleri bulunmaktadır.",
+  },
+  {
+    q: "Eğitim ücretleri her yıl değişiyor mu?",
+    a: "Birçok programda eğitim ücretleri öğrenciler için yıllık olarak sabitlenmektedir. Böylece uzun vadeli eğitim planlaması daha güvenli yapılabilmektedir.",
+  },
+  {
+    q: "Taksitli ödeme imkanı var mı?",
+    a: "Evet. Üniversite ve programa göre dönemlik veya taksitli ödeme seçenekleri sunulabilmektedir.",
+  },
+  {
+    q: "Schengen ülkelerine seyahat avantajı var mı?",
+    a: "Evet. Sırbistan’da yasal öğrenci statüsünde bulunan öğrenciler birçok durumda yalnızca öğrenci belgesi ile başvuru yapabilmektedir. Başvurular ortalama 7 gün içerisinde sonuçlanabilmekte ve danışmanlık hizmetimiz kapsamında ücretsiz takip edilmektedir.",
+  },
+  {
+    q: "Türkiye’de askerlik erteleme işlemleri yapılabiliyor mu?",
+    a: "Öğrencilik statüsünün aktif olması durumunda askerlik erteleme süreçleri değerlendirilebilmektedir. Danışmanlık hizmetimiz kapsamında süreç ücretsiz şekilde takip edilmektedir.",
+  },
+  {
+    q: "Firmanız Sırbistan Hükümeti tarafından tanınıyor mu?",
+    a: "Gerçekleştirdiğimiz resmi iş birlikleri kapsamında Sırbistan Ticaret ve Eğitim Bakanlığı ile ortak çalışmalar yürütülmektedir. Ayrıca Belgrad’da aktif ofisimiz bulunmaktadır.",
+  },
+];
+
+export default function Home() {
   return (
-    <main className="bg-[#eef5fc] text-[#06154a] overflow-hidden">
-      {/* NAVBAR */}
+    <main className="bg-[#eef7ff] text-[#061946] overflow-hidden">
       <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-blue-100">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-black tracking-tight text-blue-700">
-              İSTASYON
-            </h1>
-            <p className="text-sm tracking-[6px] text-sky-500 font-semibold">
-              AKADEMİ
-            </p>
+            <h1 className="text-3xl font-black text-blue-700">İSTASYON</h1>
+            <p className="text-xs tracking-[6px] text-sky-500 font-bold">AKADEMİ</p>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-10 font-semibold">
-            <a href="#">Anasayfa</a>
-            <a href="#">Hakkımızda</a>
-            <a href="#">Üniversiteler</a>
-            <a href="#">Programlar</a>
-            <a href="#">SSS</a>
-            <a href="#">İletişim</a>
+          <nav className="hidden lg:flex gap-8 text-sm font-bold">
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#programlar">Programlar</a>
+            <a href="#universiteler">Üniversiteler</a>
+            <a href="#sss">SSS</a>
+            <a href="#iletisim">İletişim</a>
           </nav>
 
-          <a
-            href="https://wa.me/381631673885"
-            target="_blank"
-            className="bg-blue-600 hover:bg-blue-700 transition text-white px-7 py-4 rounded-3xl font-bold shadow-xl"
-          >
+          <a href={whatsapp} className="bg-blue-600 text-white px-6 py-4 rounded-2xl font-black shadow-xl">
             Başvuru Yap
           </a>
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="pt-44 pb-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+      <section className="pt-40 pb-24 bg-gradient-to-br from-sky-100 via-white to-blue-100">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-sky-500 italic text-4xl mb-8">
-              Hayallerine İstasyon Belgrad!
-            </p>
-
-            <h2 className="text-[78px] leading-[0.95] font-black tracking-tight">
-              GELECEĞİN
-              <br />
-              İÇİN
-              <br />
-              <span className="text-blue-600">BELGRAD’DA</span>
-              <br />
-              YENİ BİR
-              <br />
-              BAŞLANGIÇ!
+            <p className="text-2xl italic text-sky-500 mb-6">Üniversite için tek yol yalnızca YKS değil.</p>
+            <h2 className="text-5xl lg:text-7xl font-black leading-tight">
+              Belgrad’da <span className="text-blue-700">Geleceğini</span> İnşa Et
             </h2>
-
-            <p className="mt-10 text-2xl text-slate-600 leading-relaxed max-w-xl">
-              Avrupa standartlarında eğitim, uluslararası geçerliliğe sahip
-              diplomalar ve Belgrad’da profesyonel danışmanlık desteği.
+            <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-xl">
+              Avrupa standartlarında eğitim, YÖK denkliği, mavi diploma, Schengen avantajları ve eğitim süresince profesyonel danışmanlık desteği.
             </p>
-
-            <div className="mt-12 flex flex-wrap gap-5">
-              <a
-                href="https://wa.me/381631673885"
-                target="_blank"
-                className="bg-blue-600 hover:bg-blue-700 transition text-white px-9 py-5 rounded-3xl font-bold text-lg shadow-2xl"
-              >
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a href={whatsapp} className="bg-blue-600 text-white px-8 py-5 rounded-2xl font-black shadow-2xl">
                 WhatsApp ile Danış
               </a>
-
-              <button className="border-2 border-blue-600 text-blue-700 px-9 py-5 rounded-3xl font-bold hover:bg-blue-50 transition">
-                Üniversiteleri İncele
-              </button>
+              <a href="#programlar" className="bg-white text-blue-700 px-8 py-5 rounded-2xl font-black shadow-xl border border-blue-200">
+                Programları İncele
+              </a>
             </div>
           </div>
 
-          {/* HERO CARD */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-blue-500 blur-[120px] opacity-20 rounded-full" />
-
-            <div className="relative bg-white rounded-[40px] p-8 shadow-2xl border border-blue-100">
-              <div className="bg-gradient-to-br from-blue-600 to-sky-400 rounded-[35px] p-14 text-center text-white">
-                <div className="text-7xl font-black">BELGRAD</div>
-
-                <div className="mt-10 grid grid-cols-2 gap-4 text-left">
-                  <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-5">
-                    <h4 className="font-bold text-xl">Mavi Diploma</h4>
-                    <p className="text-white/80 mt-2">
-                      Avrupa standartlarında eğitim sistemi.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-5">
-                    <h4 className="font-bold text-xl">YÖK Denkliği</h4>
-                    <p className="text-white/80 mt-2">
-                      Uluslararası geçerliliğe sahip programlar.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-5">
-                    <h4 className="font-bold text-xl">Oturum İzni</h4>
-                    <p className="text-white/80 mt-2">
-                      Eğitim sürecinde resmi destek.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-5">
-                    <h4 className="font-bold text-xl">Schengen Avantajı</h4>
-                    <p className="text-white/80 mt-2">
-                      Avrupa’ya kolay ulaşım imkanı.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="bg-white/80 backdrop-blur-xl border border-white rounded-[44px] p-8 shadow-2xl">
+            <div className="h-[420px] rounded-[36px] bg-gradient-to-br from-blue-700 to-sky-400 flex items-center justify-center text-white text-6xl font-black">
+              BELGRAD
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FEATURES */}
-      <section className="pb-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-white rounded-[40px] shadow-2xl border border-blue-100 p-10">
-            <div className="grid lg:grid-cols-7 gap-6">
-              {features.map((item, i) => (
-                <div
-                  key={i}
-                  className="text-center border-r last:border-none border-blue-100 px-4"
-                >
-                  <div className="w-20 h-20 rounded-3xl bg-blue-100 mx-auto flex items-center justify-center text-4xl text-blue-600 font-black">
-                    ✓
-                  </div>
-
-                  <p className="mt-5 font-bold text-lg leading-relaxed">
-                    {item}
-                  </p>
+            <div className="grid grid-cols-2 gap-4 mt-5">
+              {["YÖK Denkliği", "Mavi Diploma", "Oturum Desteği", "Schengen Avantajı"].map((x) => (
+                <div key={x} className="bg-sky-50 p-5 rounded-2xl text-center font-black text-blue-800">
+                  {x}
                 </div>
               ))}
             </div>
-
-            <p className="mt-10 text-center text-slate-500 text-lg">
-              * Eğitim süreçleri boyunca Sırbistan’da uluslararası ve Sırbistan
-              Ticaret ve Eğitim Bakanlığı garantörlüğünde ofisimiz
-              bulunduğundan tam destek verilecektir.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* UNIVERSITIES */}
-      <section className="pb-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="uppercase tracking-[8px] text-blue-500 font-bold">
-            Partner Üniversiteler
-          </p>
-
-          <h3 className="text-6xl font-black mt-5">
-            Güçlü Akademik Partnerler
-          </h3>
-
-          <div className="grid lg:grid-cols-4 gap-8 mt-16">
-            {universities.map((uni, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-[35px] p-8 shadow-xl border border-blue-100 hover:-translate-y-2 transition"
-              >
-                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-blue-600 to-sky-400 mb-8" />
-
-                <h4 className="text-3xl font-black leading-tight">
-                  {uni.name}
-                </h4>
-
-                <p className="text-slate-600 mt-5 leading-relaxed text-lg">
-                  {uni.desc}
-                </p>
-
-                <button className="mt-8 text-blue-600 font-bold text-lg">
-                  Detaylı İncele →
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROGRAMS */}
-      <section className="pb-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-4 gap-8">
-            {programs.map((program, i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-br from-blue-600 to-sky-400 rounded-[40px] p-10 text-white shadow-2xl hover:scale-[1.02] transition"
-              >
-                <div className="w-20 h-20 bg-white/15 rounded-3xl mb-10" />
-
-                <h3 className="text-5xl font-black leading-tight">
-                  {program}
-                </h3>
-
-                <p className="mt-8 text-white/90 text-xl leading-relaxed">
-                  Avrupa standartlarında eğitim programları ve profesyonel süreç
-                  yönetimi.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="pb-28">
-        <div className="max-w-5xl mx-auto px-6">
-          <p className="uppercase tracking-[8px] text-blue-500 font-bold text-center">
-            Sıkça Sorulan Sorular
-          </p>
-
-          <h3 className="text-6xl font-black mt-5 text-center">
-            Merak Edilenler
-          </h3>
-
-          <div className="mt-14 space-y-6">
-            {faqs.map((faq, i) => (
-              <details
-                key={i}
-                className="bg-white rounded-[30px] p-8 shadow-xl border border-blue-100"
-              >
-                <summary className="cursor-pointer text-2xl font-black">
-                  {faq.q}
-                </summary>
-
-                <p className="mt-6 text-slate-600 text-lg leading-relaxed">
-                  {faq.a}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="pb-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-[45px] bg-gradient-to-r from-blue-700 to-sky-500 p-16 text-white text-center shadow-2xl">
-            <h3 className="text-6xl font-black leading-tight">
-              Geleceğini Bugün Planla
-            </h3>
-
-            <p className="mt-8 text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Belgrad’da üniversite eğitimi, oturum süreci ve başvuru
-              danışmanlığı için hemen bizimle iletişime geç.
-            </p>
-
-            <a
-              href="https://wa.me/381631673885"
-              target="_blank"
-              className="inline-block mt-10 bg-white text-blue-700 px-10 py-5 rounded-3xl font-black text-xl shadow-2xl"
-            >
-              WhatsApp Üzerinden Başvur
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="bg-[#02154d] text-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-14">
-          <div>
-            <h3 className="text-5xl font-black">İSTASYON AKADEMİ</h3>
-
-            <p className="mt-8 text-white/80 text-xl leading-relaxed">
-              Belgrad’da Avrupa standartlarında eğitim danışmanlığı.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-black text-2xl mb-8">Programlar</h4>
-
-            <ul className="space-y-5 text-white/80 text-lg">
-              <li>Lisans</li>
-              <li>Yüksek Lisans</li>
-              <li>Doktora</li>
-              <li>Yaz Okulu</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-black text-2xl mb-8">Yasal</h4>
-
-            <ul className="space-y-5 text-white/80 text-lg">
-              <li>KVKK</li>
-              <li>Gizlilik Politikası</li>
-              <li>Çerez Politikası</li>
-              <li>Kullanım Koşulları</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-black text-2xl mb-8">İletişim</h4>
-
-            <div className="text-5xl font-black">
-              +381 63 1673885
+      <section className="max-w-7xl mx-auto px-6 -mt-10 relative z-10">
+        <div className="bg-white rounded-[40px] p-8 shadow-2xl border border-blue-100 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {benefits.map((b) => (
+            <div key={b} className="p-6 rounded-3xl bg-[#f6fbff] border border-blue-100">
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl font-black mb-4">✓</div>
+              <h3 className="font-black text-lg">{b}</h3>
             </div>
+          ))}
+        </div>
+      </section>
 
-            <a
-              href="https://wa.me/381631673885"
-              target="_blank"
-              className="inline-block mt-8 bg-[#10d95c] text-white px-8 py-5 rounded-3xl font-black text-xl"
-            >
+      <section id="hakkimizda" className="max-w-7xl mx-auto px-6 py-28">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-blue-600 tracking-[5px] font-black text-sm">HAKKIMIZDA</p>
+            <h2 className="text-5xl font-black mt-4">İstanbul ve Belgrad’da Yanınızdayız</h2>
+          </div>
+          <div className="text-lg text-slate-600 leading-relaxed space-y-5">
+            <p>
+              İstasyon Akademi, öğrencilerin Avrupa standartlarında eğitim fırsatlarına güvenli ve şeffaf şekilde ulaşabilmesi için kurulmuş uluslararası eğitim danışmanlığı markasıdır.
+            </p>
+            <p>
+              İstanbul’da bulunan ana merkezimiz ve Belgrad’daki ofisimiz ile öğrencilerimize başvuru, kabul, kayıt, oturum, konaklama, Schengen vize yönlendirmeleri ve eğitim süreci boyunca destek sağlanmaktadır.
+            </p>
+            <p>
+              Sırbistan Ticaret ve Eğitim Bakanlığı ile yürütülen ortak çalışmalar ve kurumsal iş birlikleri sayesinde öğrencilerimize yerinde, sürdürülebilir ve profesyonel süreç yönetimi sunulmaktadır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="programlar" className="bg-white py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-blue-600 tracking-[5px] font-black text-sm">PROGRAMLAR</p>
+          <h2 className="text-5xl font-black mt-4 mb-12">Bölüm ve Program Seçenekleri</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {programs.map((p) => (
+              <div key={p} className="bg-gradient-to-br from-blue-700 to-sky-400 text-white rounded-[36px] p-8 shadow-2xl hover:-translate-y-2 transition">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 mb-8" />
+                <h3 className="text-3xl font-black">{p}</h3>
+                <p className="mt-5 text-white/90 leading-relaxed">
+                  YÖK denkliği, Bologna süreci, mavi diploma ve uluslararası eğitim avantajlarıyla akademik geleceğini planla.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="universiteler" className="max-w-7xl mx-auto px-6 py-28">
+        <p className="text-blue-600 tracking-[5px] font-black text-sm">ÜNİVERSİTELER</p>
+        <h2 className="text-5xl font-black mt-4 mb-12">Partner Üniversitelerimiz</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {universities.map((u) => (
+            <div key={u} className="bg-white rounded-[36px] p-8 shadow-xl border border-blue-100 hover:-translate-y-2 transition">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-700 to-sky-400 mb-7" />
+              <h3 className="text-2xl font-black">{u}</h3>
+              <p className="mt-5 text-slate-600 leading-relaxed">
+                Belgrad’da Avrupa standartlarında akademik eğitim fırsatı.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="sss" className="bg-white py-28">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-center text-blue-600 tracking-[5px] font-black text-sm">SIKÇA SORULAN SORULAR</p>
+          <h2 className="text-center text-5xl font-black mt-4 mb-12">Merak Edilenler</h2>
+          {faqs.map((f) => (
+            <details key={f.q} className="bg-[#f7fbff] rounded-3xl p-6 mb-5 shadow border border-blue-100">
+              <summary className="cursor-pointer font-black text-xl">{f.q}</summary>
+              <p className="mt-5 text-slate-600 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="rounded-[44px] bg-gradient-to-r from-blue-800 to-sky-500 p-12 lg:p-20 text-white text-center shadow-2xl">
+          <h2 className="text-5xl font-black">Geleceğini Bugün Planla</h2>
+          <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto">
+            Belgrad’da üniversite eğitimi, oturum süreci ve başvuru danışmanlığı için hemen bizimle iletişime geç.
+          </p>
+          <a href={whatsapp} className="inline-block mt-10 bg-white text-blue-700 px-10 py-5 rounded-2xl font-black shadow-xl">
+            WhatsApp Üzerinden Başvur
+          </a>
+        </div>
+      </section>
+
+      <footer id="iletisim" className="bg-[#021440] text-white py-20">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12">
+          <div>
+            <h3 className="text-4xl font-black">İSTASYON AKADEMİ</h3>
+            <p className="mt-6 text-white/70">Belgrad’da Avrupa standartlarında eğitim danışmanlığı.</p>
+          </div>
+          <div>
+            <h4 className="font-black mb-5">Programlar</h4>
+            <p>Lisans</p><p>Yüksek Lisans</p><p>Doktora</p><p>Yaz Okulu</p>
+          </div>
+          <div>
+            <h4 className="font-black mb-5">Yasal</h4>
+            <p>KVKK</p><p>Gizlilik Politikası</p><p>Çerez Politikası</p><p>Kullanım Koşulları</p>
+          </div>
+          <div>
+            <h4 className="font-black mb-5">İletişim</h4>
+            <p className="text-3xl font-black">+381 63 1673885</p>
+            <a href={whatsapp} className="inline-block mt-6 bg-green-500 px-8 py-4 rounded-2xl font-black">
               WhatsApp Yaz
             </a>
           </div>
         </div>
-
-        <div className="max-w-7xl mx-auto px-6 mt-16 border-t border-white/10 pt-10 text-white/50">
-          © 2026 İstasyon Akademi. Tüm hakları saklıdır.
-        </div>
       </footer>
 
-      {/* FLOATING WHATSAPP */}
-      <a
-        href="https://wa.me/381631673885"
-        target="_blank"
-        className="fixed bottom-8 right-8 bg-[#10d95c] text-white px-8 py-5 rounded-full font-black shadow-2xl z-50"
-      >
+      <a href={whatsapp} className="fixed bottom-7 right-7 bg-green-500 text-white px-7 py-4 rounded-full font-black shadow-2xl z-50">
         WhatsApp
       </a>
     </main>
