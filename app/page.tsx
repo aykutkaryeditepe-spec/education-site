@@ -373,7 +373,7 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Avrupa standartlarında en çok tercih edilen lisans ve yüksek lisans programları.
+              En çok tercih edilen bölümler ve kariyer programları.
             </p>
           </div>
 
