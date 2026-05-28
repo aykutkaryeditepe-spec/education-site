@@ -413,7 +413,6 @@ export default function Home() {
                 </h3>
 
                 <div className="flex items-center text-sm text-white/80">
-                  Avrupa Eğitimi
                 </div>
               </div>
             ))}
