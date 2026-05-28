@@ -526,95 +526,62 @@ export default function Home() {
 
       {/* FOOTER */}
 
-      <footer
-        id="iletisim"
-        className="bg-[#021440] text-white py-20"
-      >
-
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12">
-
+      
+      <footer id="iletisim" className="bg-[#021440] text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-10 items-start">
           <div>
-
-            <h3 className="text-4xl font-black">
-              İSTASYON AKADEMİ
+            <h3 className="text-4xl font-black leading-tight">
+              İSTASYON<br />AKADEMİ
             </h3>
-
-            <p className="mt-6 text-white/70 leading-relaxed">
-              Belgrad’da Avrupa standartlarında
-              eğitim danışmanlığı.
+            <p className="mt-5 text-white/70 leading-relaxed max-w-xs">
+              İstanbul ana merkezimiz ve Belgrad ofisimizle Avrupa standartlarında eğitim danışmanlığı.
             </p>
           </div>
 
           <div>
-
-            <h4 className="font-black mb-5">
-              Programlar
-            </h4>
-
+            <h4 className="font-black mb-5 text-lg">Programlar</h4>
             <div className="space-y-3 text-white/70">
-              <p>Lisans</p>
-              <p>Yüksek Lisans</p>
-              <p>Doktora</p>
-              <p>Yaz Okulu</p>
+              <a href="#programlar" className="block hover:text-white transition">Lisans Programları</a>
+              <a href="#programlar" className="block hover:text-white transition">Yüksek Lisans Programları</a>
+              <a href="#programlar" className="block hover:text-white transition">Doktora Programları</a>
+              <a href="#programlar" className="block hover:text-white transition">Yaz Okulu</a>
             </div>
           </div>
 
           <div>
-
-            <h4 className="font-black mb-5">
-              Yasal
-            </h4>
-
+            <h4 className="font-black mb-5 text-lg">Yasal</h4>
             <div className="space-y-3 text-white/70">
-
-              <a href="/kvkk" className="block">
-                KVKK
-              </a>
-
-              <a
-                href="/gizlilik-politikasi"
-                className="block"
-              >
-                Gizlilik Politikası
-              </a>
-
-              <a
-                href="/cerez-politikasi"
-                className="block"
-              >
-                Çerez Politikası
-              </a>
-
-              <a
-                href="/kullanim-kosullari"
-                className="block"
-              >
-                Kullanım Koşulları
-              </a>
+              <a href="/kvkk" className="block hover:text-white transition">KVKK</a>
+              <a href="/gizlilik-politikasi" className="block hover:text-white transition">Gizlilik Politikası</a>
+              <a href="/cerez-politikasi" className="block hover:text-white transition">Çerez Politikası</a>
+              <a href="/kullanim-kosullari" className="block hover:text-white transition">Kullanım Koşulları</a>
             </div>
           </div>
 
           <div>
-
-            <h4 className="font-black mb-5">
-              İletişim
-            </h4>
-
-            <p className="text-3xl font-black">
-              +381 63 1673885
-            </p>
-
+            <h4 className="font-black mb-5 text-lg">İletişim</h4>
             <a
-              href={whatsapp}
-              className="inline-block mt-6 bg-green-500 px-8 py-4 rounded-2xl font-black"
+              href="tel:+381631673885"
+              className="block text-2xl xl:text-3xl font-black whitespace-nowrap"
+            >
+              +381 63 1673885
+            </a>
+            <a
+              href="https://wa.me/381631673885"
+              className="inline-block mt-6 bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-2xl font-black shadow-xl"
             >
               WhatsApp Yaz
             </a>
           </div>
         </div>
+
+        <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 justify-between text-white/50 text-sm">
+          <p>© 2026 İstasyon Akademi. Tüm hakları saklıdır.</p>
+          <p>Belgrad’da Geleceğini İnşa Et.</p>
+        </div>
       </footer>
 
-      {/* FLOATING BUTTON */}
+{/* FLOATING BUTTON */}
 
       <a
         href={whatsapp}
