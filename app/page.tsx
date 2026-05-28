@@ -357,44 +357,75 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROGRAMS */}
+      {/* PROGRAMLAR */}
 
-      <section
-        id="programlar"
-        className="bg-white py-32"
-      >
+      <section id="programlar" className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white opacity-80" />
 
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <p className="text-blue-600 font-black tracking-[0.35em] uppercase mb-4">
+              PROGRAMLAR
+            </p>
 
-          <p className="text-blue-600 tracking-[6px] text-sm font-black">
-            PROGRAMLAR
-          </p>
+            <h2 className="text-5xl md:text-6xl font-black text-[#021440] mb-6 leading-tight">
+              Geleceğin Meslekleri
+            </h2>
 
-          <h2 className="text-6xl font-black mt-5 mb-14">
-            Bölüm ve Programlar
-          </h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+              Avrupa standartlarında en çok tercih edilen lisans ve yüksek lisans programları.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            {programs.map((program) => (
-
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              { icon: "🩺", title: "Tıp" },
+              { icon: "🦷", title: "Diş Hekimliği" },
+              { icon: "💊", title: "Eczacılık" },
+              { icon: "🧬", title: "Fizyoterapi" },
+              { icon: "🩹", title: "Hemşirelik" },
+              { icon: "💻", title: "Yazılım" },
+              { icon: "🤖", title: "Yapay Zekâ" },
+              { icon: "🛡️", title: "Siber Güvenlik" },
+              { icon: "🧠", title: "Psikoloji" },
+              { icon: "📈", title: "MBA" },
+              { icon: "💼", title: "İşletme" },
+              { icon: "🌍", title: "Uluslararası İlişkiler" },
+              { icon: "⚖️", title: "Hukuk" },
+              { icon: "🏛️", title: "Mimarlık" },
+              { icon: "🏗️", title: "İnşaat Mühendisliği" },
+              { icon: "⚙️", title: "Makine Mühendisliği" },
+              { icon: "🔌", title: "Elektrik-Elektronik" },
+              { icon: "📚", title: "Türk Dili ve Edebiyatı" },
+              { icon: "🏺", title: "Tarih" },
+              { icon: "🗣️", title: "Türkoloji" },
+            ].map((item, index) => (
               <div
-                key={program}
-                className="bg-gradient-to-br from-blue-700 to-sky-400 rounded-[36px] p-8 text-white shadow-2xl hover:-translate-y-2 transition"
+                key={index}
+                className="group bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-500 rounded-[2rem] p-7 text-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
               >
+                <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur flex items-center justify-center text-4xl mb-7 shadow-lg">
+                  {item.icon}
+                </div>
 
-                <div className="w-16 h-16 rounded-2xl bg-white/20 mb-8" />
-
-                <h3 className="text-3xl font-black">
-                  {program}
+                <h3 className="text-2xl font-black leading-tight mb-4">
+                  {item.title}
                 </h3>
 
-                <p className="mt-5 text-white/90 leading-relaxed">
-                  YÖK denkliği, Bologna süreci ve
-                  uluslararası eğitim avantajları.
-                </p>
+                <div className="flex items-center text-sm text-white/80">
+                  Avrupa Eğitimi
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-16">
+            <a
+              href="#iletisim"
+              className="inline-flex items-center bg-[#021440] text-white px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-all shadow-2xl"
+            >
+              Tüm Programları İncele
+            </a>
           </div>
         </div>
       </section>
