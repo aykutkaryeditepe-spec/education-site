@@ -60,12 +60,17 @@ const universities = [
 const faqs = [
   {
     q: "Sırbistan’da alınan diplomalar Türkiye’de geçerli mi?",
-    a: "Üniversite ve programa bağlı olarak YÖK kriterlerine uygun denklik süreçleri bulunmaktadır.",
+    a: "Evet. Üniversite ve programın YÖK kriterlerine uygun olması durumunda denklik süreçleri yürütülebilmektedir. Partner üniversitelerimiz Bologna sürecine dahil olup uluslararası akademik standartlara uygundur.",
   },
 
   {
-    q: "Türkçe programlar mevcut mu?",
-    a: "Evet. Özellikle Türkoloji bölümü tamamen Türkçe eğitim vermektedir.",
+    q: "Mavi diploma veriliyor mu?",
+    a: "Evet. Üniversiteler Avrupa standartlarında eğitim verdiğinden dolayı mezuniyet sonrası mavi diploma sistemi bulunmaktadır.",
+  },
+
+  {
+    q: "Eğitim ücretleri yıllık olarak artıyor mu?",
+    a: "Birçok programda eğitim ücretleri öğrencinin kayıt olduğu yıl üzerinden sabitlenmektedir. Böylece öğrenciler eğitim süreçlerini daha güvenli şekilde planlayabilmektedir.",
   },
 
   {
@@ -74,10 +79,81 @@ const faqs = [
   },
 
   {
-    q: "Schengen avantajı bulunuyor mu?",
-    a: "Birçok durumda yalnızca öğrenci belgesi ile başvuru yapılabilmekte olup süreçler danışmanlık hizmetimiz kapsamında ücretsiz takip edilmektedir.",
+    q: "Türkçe programlar mevcut mu?",
+    a: "Evet. Özellikle Türkoloji bölümü tamamen Türkçe eğitim vermektedir. Ayrıca bu bölümün yüksek lisans ve doktora programları da bulunmaktadır.",
+  },
+
+  {
+    q: "Eğitim dili nedir?",
+    a: "Programlara göre eğitim dili İngilizce, Sırpça veya Türkçe olabilmektedir. Uluslararası öğrenciler için İngilizce program seçenekleri geniştir.",
+  },
+
+  {
+    q: "Schengen ülkelerine seyahat avantajı bulunuyor mu?",
+    a: "Evet. Yasal öğrenci statüsünde bulunan öğrenciler gerekli prosedürleri tamamladıktan sonra Schengen vizesine başvurabilmektedir. Çoğu durumda yalnızca öğrenci belgesi ile başvuru yapılabilmektedir.",
+  },
+
+  {
+    q: "Schengen vize süreci ne kadar sürüyor?",
+    a: "Başvurular çoğu durumda yaklaşık 7 gün içerisinde sonuçlanmaktadır. Danışmanlık hizmetimiz kapsamında süreçler ücretsiz şekilde takip edilmektedir.",
+  },
+
+  {
+    q: "Oturum izni alabiliyor muyum?",
+    a: "Evet. Üniversite kabulü sonrası öğrenciler için yasal oturum izni süreçleri başlatılmaktadır. Tüm süreç danışmanlık desteğimiz kapsamında takip edilmektedir.",
+  },
+
+  {
+    q: "Eğitim sırasında çalışma izni var mı?",
+    a: "Sırbistan’daki yasal düzenlemeler kapsamında belirli koşullar altında çalışma izni süreçleri yürütülebilmektedir.",
+  },
+
+  {
+    q: "Askerlik tecil işlemleri yapılabiliyor mu?",
+    a: "Evet. Türkiye Cumhuriyeti mevzuatına uygun şekilde öğrencilik durumuna bağlı resmi süreçlerde danışmanlık desteği sağlanmaktadır.",
+  },
+
+  {
+    q: "Üniversiteye giriş için YKS zorunlu mu?",
+    a: "Hayır. Birçok bölümde yalnızca YKS sonucu ile değil, lise diploması ve üniversite başvuru süreci ile kayıt yapılabilmektedir.",
+  },
+
+  {
+    q: "Firmanız Sırbistan Hükümeti tarafından tanınıyor mu?",
+    a: "Evet. Yaptığımız anlaşmalar doğrultusunda Sırbistan Ticaret ve Eğitim Bakanlığı ile çeşitli ortak çalışmalar yürütülmektedir. Ayrıca Belgrad’da fiziksel ofisimiz bulunmaktadır.",
+  },
+
+  {
+    q: "Eğitim sürecinde destek veriliyor mu?",
+    a: "Evet. Öğrencilerimize başvuru, kabul, kayıt, oturum, konaklama ve eğitim süreçleri boyunca ücretsiz danışmanlık desteği sağlanmaktadır.",
+  },
+
+  {
+    q: "Konaklama konusunda yardımcı oluyor musunuz?",
+    a: "Evet. Öğrencilere bütçe ve lokasyona uygun konaklama seçenekleri konusunda destek verilmektedir.",
+  },
+
+  {
+    q: "Başvuru süreci nasıl ilerliyor?",
+    a: "Ön başvuru sonrası öğrenciye uygun bölüm ve üniversite seçenekleri belirlenir. Ardından evrak süreci, kabul işlemleri, kayıt ve oturum süreçleri profesyonel şekilde takip edilir.",
+  },
+
+  {
+    q: "Başvuru için hangi belgeler gerekiyor?",
+    a: "Genellikle pasaport, lise diploması, transkript ve bazı programlarda ek akademik belgeler talep edilmektedir.",
+  },
+
+  {
+    q: "Sırbistan’da yaşam maliyetleri uygun mu?",
+    a: "Evet. Avrupa’daki birçok ülkeye kıyasla Sırbistan’da yaşam ve eğitim maliyetleri daha uygundur.",
+  },
+
+  {
+    q: "Eğitim sonrası Avrupa’da kariyer avantajı bulunuyor mu?",
+    a: "Evet. Avrupa standartlarında alınan eğitim ve uluslararası diploma sayesinde öğrenciler farklı ülkelerde kariyer fırsatlarına ulaşabilmektedir.",
   },
 ];
+ 
 
 export default function Home() {
   return (
