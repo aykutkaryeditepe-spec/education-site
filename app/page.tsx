@@ -196,9 +196,9 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/80 via-[#021440]/45 to-[#021440]/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/78 via-[#021440]/35 to-[#021440]/10" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-56 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
+        <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-56 grid lg:grid-cols-1 gap-16 items-start">
           <div className="text-white">
             <p className="text-2xl italic text-sky-300 mb-8">
               Üniversite için tek yol yalnızca YKS değil.
@@ -234,27 +234,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          <div className="hidden lg:block">
-            <div className="ml-auto max-w-[360px] bg-black/25 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
-              <div className="space-y-7 text-lg">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl">🎓</span>
-                  <span>YÖK Denkliği</span>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl">🇪🇺</span>
-                  <span>Schengen Avantajları</span>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl">📜</span>
-                  <span>Mavi Diploma</span>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl">👤</span>
-                  <span>Profesyonel Destek</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
