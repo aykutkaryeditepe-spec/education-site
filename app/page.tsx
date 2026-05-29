@@ -161,7 +161,7 @@ export default function Home() {
 
       {/* NAVBAR */}
 
-      <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-blue-100">
+      <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
           <div>
@@ -206,12 +206,6 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-40 grid lg:grid-cols-2 gap-16 items-center">
 
           <div className="text-white">
-
-  <img
-    src="/images/logo-main.png"
-    alt="İstasyon Akademi"
-    className="h-32 md:h-40 w-auto mb-8"
-  />
 
   <p className="text-2xl italic text-sky-300 mb-6">
     Üniversite için tek yol yalnızca YKS değil.
