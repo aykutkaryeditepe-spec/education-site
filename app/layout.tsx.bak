@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Belgrad Üniversite Eğitimi | İstasyon Akademi",
-  description: "Belgrad’da üniversite eğitimi, YÖK denkliği, mavi diploma ve profesyonel başvuru danışmanlığı. İstasyon Akademi ile geleceğini inşa et.",
+  title: "İstasyon Akademi",
+  description: "Belgrad ve Avrupa Üniversite Danışmanlığı",
   icons: {
     icon: "/images/favicon.png",
   },
