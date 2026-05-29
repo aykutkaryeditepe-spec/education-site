@@ -51,7 +51,7 @@ const universities = [
 
   {
     name: "Modern Business School",
-    image: "/images/mbs-campus.png",
+    image: "/images/mbs-campus.jpg",
     logo: "/images/mbs-logo.png",
     desc: "Uluslararası işletme, yönetim ve modern ekonomi alanlarında Avrupa standartlarında akademik eğitim fırsatı sunmaktadır.",
   },
