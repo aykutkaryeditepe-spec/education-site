@@ -191,14 +191,14 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-[760px] overflow-hidden">
+      <section className="relative min-h-[820px] overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-[center_35%]"
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-[#061946]"
           style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/78 via-[#021440]/35 to-[#021440]/10" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-32 grid lg:grid-cols-1 gap-16 items-start">
+        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-40 grid lg:grid-cols-1 gap-16 items-start">
           <div className="text-white">
             <p className="text-2xl italic text-sky-300 mb-8">
               Üniversite için tek yol yalnızca YKS değil.
