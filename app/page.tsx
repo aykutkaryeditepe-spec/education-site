@@ -162,7 +162,7 @@ export default function Home() {
       {/* NAVBAR */}
 
       <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-start justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-start justify-between">
 
           <div>
             <img
@@ -213,9 +213,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-8 text-xl text-white/90 leading-relaxed max-w-xl">
-              Avrupa standartlarında eğitim, YÖK denkliği,
-              mavi diploma, Schengen avantajları ve
-              profesyonel danışmanlık desteği.
+              Belgrad’ın köklü üniversitelerinde eğitim alın,
+              YÖK denkliğine sahip diplomanızla Avrupa ve
+              Türkiye’de kariyer fırsatları yakalayın.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
@@ -223,7 +223,7 @@ export default function Home() {
                 href={whatsapp}
                 className="bg-blue-500 hover:bg-blue-600 transition px-8 py-5 rounded-2xl font-black text-white shadow-2xl"
               >
-                WhatsApp ile Başvur
+                💬 WhatsApp ile Başvur
               </a>
 
               <a
