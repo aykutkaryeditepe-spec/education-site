@@ -165,13 +165,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
           <div>
-            <h1 className="text-3xl font-black text-blue-700">
-              İSTASYON
-            </h1>
-
-            <p className="text-xs tracking-[6px] text-sky-500 font-bold">
-              AKADEMİ
-            </p>
+            <img
+              src="/images/logo-horizontal.png"
+              alt="İstasyon Akademi"
+              className="h-14 md:h-16 w-auto"
+            />
           </div>
 
           <nav className="hidden lg:flex gap-8 font-bold text-sm">
