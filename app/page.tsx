@@ -523,7 +523,7 @@ export default function Home() {
               className="h-16 w-auto object-contain"
             />
             <p className="mt-5 text-white/70 leading-relaxed max-w-xs">
-              İstanbul ana merkezimiz ve Belgrad ofisimizle Avrupa standartlarında eğitim danışmanlığı.
+              İstanbul ve Belgrad ofislerimizle başvuru, kabul, oturum ve eğitim süreçlerinde yanınızdayız.
             </p>
           </div>
 
@@ -571,7 +571,7 @@ export default function Home() {
 
 
 
-<p>Belgrad’da Geleceğini İnşa Et.</p>
+<p>YÖK Denkliği • Mavi Diploma • Schengen Avantajı</p>
 
         </div>
       </footer>
