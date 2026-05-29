@@ -197,7 +197,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('/images/belgrad-hero.png')",
+              "url('/images/belgrad-hero-premium.png')",
           }}
         />
 
@@ -245,40 +245,48 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FORM */}
+          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[40px] p-10 shadow-2xl">
 
-          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[40px] p-8 shadow-2xl">
-
-            <h3 className="text-4xl font-black text-white">
-              Ön Başvuru
+            <h3 className="text-4xl font-black text-white mb-8">
+              Neden Sırbistan?
             </h3>
 
-            <div className="mt-8 space-y-4">
+            <div className="space-y-5 text-white">
 
-              <input
-                placeholder="Ad Soyad"
-                className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 text-white placeholder:text-white/60 outline-none"
-              />
+              <div className="flex items-center gap-4">
+                <div className="text-2xl">🎓</div>
+                <div>
+                  <div className="font-black">YÖK Denkliği</div>
+                  <div className="text-white/70 text-sm">Türkiye’de geçerli diplomalar</div>
+                </div>
+              </div>
 
-              <input
-                placeholder="Telefon"
-                className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 text-white placeholder:text-white/60 outline-none"
-              />
+              <div className="flex items-center gap-4">
+                <div className="text-2xl">🇪🇺</div>
+                <div>
+                  <div className="font-black">Mavi Diploma</div>
+                  <div className="text-white/70 text-sm">Uluslararası kariyer avantajı</div>
+                </div>
+              </div>
 
-              <select className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 text-white outline-none">
-                <option className="text-black">Lisans</option>
-                <option className="text-black">
-                  Yüksek Lisans
-                </option>
-                <option className="text-black">
-                  Doktora
-                </option>
-              </select>
+              <div className="flex items-center gap-4">
+                <div className="text-2xl">✈️</div>
+                <div>
+                  <div className="font-black">Schengen Avantajı</div>
+                  <div className="text-white/70 text-sm">Avrupa’ya kolay erişim</div>
+                </div>
+              </div>
 
-              <button className="w-full bg-blue-500 hover:bg-blue-600 transition text-white py-5 rounded-2xl font-black text-lg shadow-2xl">
-                Başvuru Yap
-              </button>
+              <div className="flex items-center gap-4">
+                <div className="text-2xl">🏛️</div>
+                <div>
+                  <div className="font-black">Belgrad Üniversiteleri</div>
+                  <div className="text-white/70 text-sm">Köklü ve uluslararası eğitim</div>
+                </div>
+              </div>
+
             </div>
+          </div>
           </div>
         </div>
       </section>
