@@ -3,7 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "İstasyon Akademi",
-  description: "Belgrad'da Üniversite Eğitimi",
+  description: "Belgrad ve Avrupa Üniversite Danışmanlığı",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({

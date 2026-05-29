@@ -560,9 +560,11 @@ export default function Home() {
       <footer id="iletisim" className="bg-[#021440] text-white py-16">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-10 items-start">
           <div>
-            <h3 className="text-4xl font-black leading-tight">
-              İSTASYON<br />AKADEMİ
-            </h3>
+            <img
+              src="/images/logo-white.png"
+              alt="İstasyon Akademi"
+              className="h-16 w-auto object-contain"
+            />
             <p className="mt-5 text-white/70 leading-relaxed max-w-xs">
               İstanbul ana merkezimiz ve Belgrad ofisimizle Avrupa standartlarında eğitim danışmanlığı.
             </p>
