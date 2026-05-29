@@ -162,7 +162,7 @@ export default function Home() {
       {/* NAVBAR */}
 
       <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-start justify-between">
 
           <div>
             <img
@@ -198,13 +198,13 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/80 via-[#021440]/45 to-[#021440]/20" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-36 pb-52 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+        <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-56 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
           <div className="text-white">
             <p className="text-2xl italic text-sky-300 mb-8">
               Üniversite için tek yol yalnızca YKS değil.
             </p>
 
-            <h2 className="text-6xl lg:text-8xl font-black leading-[0.95] drop-shadow-2xl">
+            <h2 className="text-7xl lg:text-[110px] font-black leading-[0.95] drop-shadow-2xl">
               Belgrad’da
               <br />
               Geleceğini
@@ -236,21 +236,21 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:block">
-            <div className="ml-auto max-w-[360px] bg-[#061946]/55 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
+            <div className="ml-auto max-w-[360px] bg-black/25 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
               <div className="space-y-7 text-lg">
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                   <span className="text-2xl">🎓</span>
                   <span>YÖK Denkliği</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                   <span className="text-2xl">🇪🇺</span>
                   <span>Schengen Avantajları</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                   <span className="text-2xl">📜</span>
                   <span>Mavi Diploma</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                   <span className="text-2xl">👤</span>
                   <span>Profesyonel Destek</span>
                 </div>
@@ -270,8 +270,8 @@ export default function Home() {
             ["✈️", "Schengen Avantajları", "Avrupa’ya yakın konum avantajı"],
             ["🎧", "7/24 Danışmanlık Desteği", "Başvuru sürecinde yanınızdayız"],
           ].map(([icon, title, desc]) => (
-            <div key={title} className="flex items-center gap-5">
-              <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl">
+            <div key={title} className="flex items-start gap-5">
+              <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-start justify-center text-3xl">
                 {icon}
               </div>
               <div>
@@ -294,7 +294,7 @@ export default function Home() {
         className="max-w-7xl mx-auto px-6 py-32"
       >
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
 
           <div>
 
@@ -384,7 +384,7 @@ export default function Home() {
                 key={index}
                 className="group bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-500 rounded-[2rem] p-7 text-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
               >
-                <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur flex items-center justify-center text-4xl mb-7 shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur flex items-start justify-center text-4xl mb-7 shadow-lg">
                   {item.icon}
                 </div>
 
@@ -392,7 +392,7 @@ export default function Home() {
                   {item.title}
                 </h3>
 
-                <div className="flex items-center text-sm text-white/80">
+                <div className="flex items-start text-sm text-white/80">
                 </div>
               </div>
             ))}
@@ -401,7 +401,7 @@ export default function Home() {
           <div className="text-center mt-16">
             <a
               href="#iletisim"
-              className="inline-flex items-center bg-[#021440] text-white px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-all shadow-2xl"
+              className="inline-flex items-start bg-[#021440] text-white px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-all shadow-2xl"
             >
               Tüm Programları İncele
             </a>
