@@ -1,7 +1,7 @@
 const phone = "381631673885";
 
 const message =
-  "Merhaba, Avrupa'da Üniversite eğitim hakkında bilgi almak istiyorum.";
+  "Merhaba, Belgrad’da eğitim hakkında bilgi almak istiyorum.";
 
 const whatsapp = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
@@ -120,7 +120,7 @@ const faqs = [
 
   {
     q: "Firmanız Sırbistan Hükümeti tarafından tanınıyor mu?",
-    a: "Evet. Yaptığımız anlaşmalar doğrultusunda Sırbistan Ticaret ve Eğitim Bakanlığı ile çeşitli ortak çalışmalar yürütülmektedir. Ayrıca Avrupa'da Üniversite fiziksel ofisimiz bulunmaktadır.",
+    a: "Evet. Yaptığımız anlaşmalar doğrultusunda Sırbistan Ticaret ve Eğitim Bakanlığı ile çeşitli ortak çalışmalar yürütülmektedir. Ayrıca Belgrad’da fiziksel ofisimiz bulunmaktadır.",
   },
 
   {
@@ -297,7 +297,7 @@ export default function Home() {
             </p>
 
             <p>
-              İstanbul’daki ana merkezimiz ve Avrupa'da Üniversiteki
+              İstanbul’daki ana merkezimiz ve Belgrad’daki
               ofisimiz ile öğrencilerimize başvuru,
               kabul, oturum, konaklama ve eğitim
               süreçleri boyunca profesyonel destek
@@ -497,7 +497,7 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 text-xl text-white/90 max-w-3xl mx-auto">
-            Avrupa'da Üniversite üniversite eğitimi, başvuru
+            Belgrad’da üniversite eğitimi, başvuru
             süreçleri ve profesyonel danışmanlık için
             hemen bizimle iletişime geç.
           </p>
@@ -571,7 +571,7 @@ export default function Home() {
 
 
 
-<p>Avrupa'da Üniversite Geleceğini İnşa Et.</p>
+<p>Belgrad’da Geleceğini İnşa Et.</p>
 
         </div>
       </footer>
