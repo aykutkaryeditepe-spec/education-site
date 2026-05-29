@@ -191,14 +191,14 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-[820px] overflow-hidden">
+      <section className="relative min-h-[920px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/80 via-[#021440]/45 to-[#021440]/20" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-48 pb-40 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+        <div className="relative max-w-7xl mx-auto px-6 pt-36 pb-52 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
           <div className="text-white">
             <p className="text-2xl italic text-sky-300 mb-8">
               Üniversite için tek yol yalnızca YKS değil.
@@ -236,7 +236,7 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:block">
-            <div className="ml-auto max-w-[380px] bg-[#061946]/55 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
+            <div className="ml-auto max-w-[360px] bg-[#061946]/55 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
               <div className="space-y-7 text-lg">
                 <div className="flex items-center gap-4">
                   <span className="text-2xl">🎓</span>
@@ -262,7 +262,7 @@ export default function Home() {
 
       {/* BENEFITS */}
 
-      <section className="relative z-20 -mt-20 max-w-7xl mx-auto px-6">
+      <section className="relative z-30 -mt-32 max-w-7xl mx-auto px-6">
         <div className="bg-white rounded-[32px] shadow-2xl p-8 grid md:grid-cols-4 gap-6 border border-blue-100">
           {[
             ["🏛️", "Avrupa Standartlarında Eğitim", "Kaliteli ve uluslararası eğitim imkânları"],
