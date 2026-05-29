@@ -191,44 +191,34 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-screen flex items-center">
-
+      <section className="relative min-h-[820px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/images/belgrad-hero-premium.png')",
-          }}
+          style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/80 via-[#021440]/45 to-[#021440]/20" />
 
-        <div className="absolute inset-0 bg-[#021440]/55" />
-
-        <div className="relative max-w-7xl mx-auto px-6 py-40 grid lg:grid-cols-2 gap-16 items-center">
-
+        <div className="relative max-w-7xl mx-auto px-6 pt-48 pb-40 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
           <div className="text-white">
+            <p className="text-2xl italic text-sky-300 mb-8">
+              Üniversite için tek yol yalnızca YKS değil.
+            </p>
 
-  <p className="text-2xl italic text-sky-300 mb-6">
-    Üniversite için tek yol yalnızca YKS değil.
-  </p>
-
-
-
-            <h2 className="text-6xl lg:text-8xl font-black leading-[0.95]">
-              Avrupa'da Üniversite
+            <h2 className="text-6xl lg:text-8xl font-black leading-[0.95] drop-shadow-2xl">
+              Belgrad’da
               <br />
-              Hayaline
+              Geleceğini
               <br />
-              Belgrad'dan Başla
+              İnşa Et
             </h2>
 
-            <p className="mt-10 text-xl text-white/80 leading-relaxed max-w-xl">
+            <p className="mt-8 text-xl text-white/90 leading-relaxed max-w-xl">
               Avrupa standartlarında eğitim, YÖK denkliği,
               mavi diploma, Schengen avantajları ve
               profesyonel danışmanlık desteği.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-
+            <div className="mt-10 flex flex-wrap gap-5">
               <a
                 href={whatsapp}
                 className="bg-blue-500 hover:bg-blue-600 transition px-8 py-5 rounded-2xl font-black text-white shadow-2xl"
@@ -238,53 +228,33 @@ export default function Home() {
 
               <a
                 href="#programlar"
-                className="bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition px-8 py-5 rounded-2xl font-black"
+                className="bg-[#061946]/60 backdrop-blur-xl border border-white/30 hover:bg-white/20 transition px-8 py-5 rounded-2xl font-black text-white"
               >
-                Programları İncele
+                Programları İncele →
               </a>
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-3xl border border-white/20 rounded-[40px] p-8 shadow-2xl max-w-[380px] ml-auto">
-
-            <h3 className="text-4xl font-black text-white mb-8">
-              Neden Sırbistan?
-            </h3>
-
-            <div className="space-y-5 text-white">
-
-              <div className="flex items-center gap-4">
-                <div className="text-2xl">🎓</div>
-                <div>
-                  <div className="font-black">YÖK Denkliği</div>
-                  <div className="text-white/70 text-sm">Türkiye’de geçerli diplomalar</div>
+          <div className="hidden lg:block">
+            <div className="ml-auto max-w-[380px] bg-[#061946]/55 backdrop-blur-3xl border border-white/20 rounded-[32px] p-9 shadow-2xl text-white">
+              <div className="space-y-7 text-lg">
+                <div className="flex items-center gap-4">
+                  <span className="text-2xl">🎓</span>
+                  <span>YÖK Denkliği</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-2xl">🇪🇺</span>
+                  <span>Schengen Avantajları</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-2xl">📜</span>
+                  <span>Mavi Diploma</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-2xl">👤</span>
+                  <span>Profesyonel Destek</span>
                 </div>
               </div>
-
-              <div className="flex items-center gap-4">
-                <div className="text-2xl">🇪🇺</div>
-                <div>
-                  <div className="font-black">Mavi Diploma</div>
-                  <div className="text-white/70 text-sm">Uluslararası kariyer avantajı</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="text-2xl">✈️</div>
-                <div>
-                  <div className="font-black">Schengen Avantajı</div>
-                  <div className="text-white/70 text-sm">Avrupa’ya kolay erişim</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="text-2xl">🏛️</div>
-                <div>
-                  <div className="font-black">Belgrad Üniversiteleri</div>
-                  <div className="text-white/70 text-sm">Köklü ve uluslararası eğitim</div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -292,23 +262,26 @@ export default function Home() {
 
       {/* BENEFITS */}
 
-      <section className="relative z-10 -mt-20 max-w-7xl mx-auto px-6">
-
-        <div className="bg-white rounded-[40px] shadow-2xl border border-blue-100 p-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-
-          {benefits.map((item) => (
-            <div
-              key={item}
-              className="bg-[#f8fbff] rounded-3xl p-6 border border-blue-100 hover:-translate-y-1 transition"
-            >
-
-              <div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-700 text-2xl font-black">
-                ✓
+      <section className="relative z-20 -mt-20 max-w-7xl mx-auto px-6">
+        <div className="bg-white rounded-[32px] shadow-2xl p-8 grid md:grid-cols-4 gap-6 border border-blue-100">
+          {[
+            ["🏛️", "Avrupa Standartlarında Eğitim", "Kaliteli ve uluslararası eğitim imkânları"],
+            ["🎖️", "YÖK Denkliği", "Türkiye’de geçerli üniversite diploması"],
+            ["✈️", "Schengen Avantajları", "Avrupa’ya yakın konum avantajı"],
+            ["🎧", "7/24 Danışmanlık Desteği", "Başvuru sürecinde yanınızdayız"],
+          ].map(([icon, title, desc]) => (
+            <div key={title} className="flex items-center gap-5">
+              <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl">
+                {icon}
               </div>
-
-              <h3 className="mt-5 font-black text-lg">
-                {item}
-              </h3>
+              <div>
+                <h3 className="font-black text-[#061946]">
+                  {title}
+                </h3>
+                <p className="text-slate-500 text-sm mt-1">
+                  {desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>
