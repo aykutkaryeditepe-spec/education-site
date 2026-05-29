@@ -616,6 +616,12 @@ export default function Home() {
   className="h-40 md:h-56 w-auto mx-auto mb-8"
 />
 
+<img
+  src="/images/logo-main.png"
+  alt="İstasyon Akademi"
+  className="h-40 md:h-56 w-auto mx-auto mb-8"
+/>
+
 <p>Belgrad’da Geleceğini İnşa Et.</p>
 
         </div>
