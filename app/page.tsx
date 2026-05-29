@@ -564,14 +564,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 justify-between text-white/50 text-sm">
+        <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 justify-between items-center text-white/55 text-sm">
           <p>© 2026 İstasyon Akademi. Tüm hakları saklıdır.</p>
           
 
 
 
 
-<p>YÖK Denkliği • Mavi Diploma • Schengen Avantajı</p>
+<p>YÖK Denkliği • Mavi Diploma • Uluslararası Kariyer</p>
 
         </div>
       </footer>
