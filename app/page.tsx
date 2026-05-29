@@ -191,20 +191,20 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-[920px] overflow-hidden">
+      <section className="relative min-h-[760px] overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-[center_35%]"
           style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/78 via-[#021440]/35 to-[#021440]/10" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-56 grid lg:grid-cols-1 gap-16 items-start">
+        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-32 grid lg:grid-cols-1 gap-16 items-start">
           <div className="text-white">
             <p className="text-2xl italic text-sky-300 mb-8">
               Üniversite için tek yol yalnızca YKS değil.
             </p>
 
-            <h2 className="text-7xl lg:text-[110px] font-black leading-[0.95] drop-shadow-2xl">
+            <h2 className="text-6xl lg:text-[96px] font-black leading-[0.95] drop-shadow-2xl">
               Belgrad’da
               <br />
               Geleceğini
@@ -239,7 +239,7 @@ export default function Home() {
 
       {/* BENEFITS */}
 
-      <section className="relative z-30 -mt-32 max-w-7xl mx-auto px-6">
+      <section className="relative z-30 -mt-20 max-w-7xl mx-auto px-6">
         <div className="bg-white rounded-[32px] shadow-2xl p-8 grid md:grid-cols-4 gap-6 border border-blue-100">
           {[
             ["🏛️", "Avrupa Standartlarında Eğitim", "Kaliteli ve uluslararası eğitim imkânları"],
@@ -282,7 +282,7 @@ export default function Home() {
             <h2 className="text-6xl font-black mt-5 leading-tight">
               İstanbul ve
               <br />
-              Avrupa'da Üniversite
+              Belgrad’da
               <br />
               Yanınızdayız
             </h2>
