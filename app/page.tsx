@@ -1,7 +1,7 @@
 const phone = "381631673885";
 
 const message =
-  "Merhaba, Belgrad’da eğitim hakkında bilgi almak istiyorum.";
+  "Merhaba, Avrupa'da Üniversite eğitim hakkında bilgi almak istiyorum.";
 
 const whatsapp = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
@@ -120,7 +120,7 @@ const faqs = [
 
   {
     q: "Firmanız Sırbistan Hükümeti tarafından tanınıyor mu?",
-    a: "Evet. Yaptığımız anlaşmalar doğrultusunda Sırbistan Ticaret ve Eğitim Bakanlığı ile çeşitli ortak çalışmalar yürütülmektedir. Ayrıca Belgrad’da fiziksel ofisimiz bulunmaktadır.",
+    a: "Evet. Yaptığımız anlaşmalar doğrultusunda Sırbistan Ticaret ve Eğitim Bakanlığı ile çeşitli ortak çalışmalar yürütülmektedir. Ayrıca Avrupa'da Üniversite fiziksel ofisimiz bulunmaktadır.",
   },
 
   {
@@ -201,7 +201,7 @@ export default function Home() {
           }}
         />
 
-        <div className="absolute inset-0 bg-[#021440]/75" />
+        <div className="absolute inset-0 bg-[#021440]/55" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-40 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -214,11 +214,11 @@ export default function Home() {
 
 
             <h2 className="text-6xl lg:text-8xl font-black leading-[0.95]">
-              Belgrad’da
+              Avrupa'da Üniversite
               <br />
-              Geleceğini
+              Hayaline
               <br />
-              İnşa Et
+              Belgrad'dan Başla
             </h2>
 
             <p className="mt-10 text-xl text-white/80 leading-relaxed max-w-xl">
@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[40px] p-10 shadow-2xl">
+          <div className="bg-white/5 backdrop-blur-3xl border border-white/20 rounded-[40px] p-8 shadow-2xl max-w-[380px] ml-auto">
 
             <h3 className="text-4xl font-black text-white mb-8">
               Neden Sırbistan?
@@ -332,7 +332,7 @@ export default function Home() {
             <h2 className="text-6xl font-black mt-5 leading-tight">
               İstanbul ve
               <br />
-              Belgrad’da
+              Avrupa'da Üniversite
               <br />
               Yanınızdayız
             </h2>
@@ -347,7 +347,7 @@ export default function Home() {
             </p>
 
             <p>
-              İstanbul’daki ana merkezimiz ve Belgrad’daki
+              İstanbul’daki ana merkezimiz ve Avrupa'da Üniversiteki
               ofisimiz ile öğrencilerimize başvuru,
               kabul, oturum, konaklama ve eğitim
               süreçleri boyunca profesyonel destek
@@ -547,7 +547,7 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 text-xl text-white/90 max-w-3xl mx-auto">
-            Belgrad’da üniversite eğitimi, başvuru
+            Avrupa'da Üniversite üniversite eğitimi, başvuru
             süreçleri ve profesyonel danışmanlık için
             hemen bizimle iletişime geç.
           </p>
@@ -621,7 +621,7 @@ export default function Home() {
 
 
 
-<p>Belgrad’da Geleceğini İnşa Et.</p>
+<p>Avrupa'da Üniversite Geleceğini İnşa Et.</p>
 
         </div>
       </footer>
