@@ -209,9 +209,17 @@ export default function Home() {
 
           <div className="text-white">
 
-            <p className="text-2xl italic text-sky-300 mb-6">
-              Üniversite için tek yol yalnızca YKS değil.
-            </p>
+  <img
+    src="/images/logo-main.png"
+    alt="İstasyon Akademi"
+    className="h-32 md:h-40 w-auto mb-8"
+  />
+
+  <p className="text-2xl italic text-sky-300 mb-6">
+    Üniversite için tek yol yalnızca YKS değil.
+  </p>
+
+
 
             <h2 className="text-6xl lg:text-8xl font-black leading-[0.95]">
               Belgrad’da
@@ -610,17 +618,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 justify-between text-white/50 text-sm">
           <p>© 2026 İstasyon Akademi. Tüm hakları saklıdır.</p>
           
-<img
-  src="/images/logo-main.png"
-  alt="İstasyon Akademi"
-  className="h-40 md:h-56 w-auto mx-auto mb-8"
-/>
 
-<img
-  src="/images/logo-main.png"
-  alt="İstasyon Akademi"
-  className="h-40 md:h-56 w-auto mx-auto mb-8"
-/>
+
+
 
 <p>Belgrad’da Geleceğini İnşa Et.</p>
 
