@@ -193,7 +193,11 @@ export default function Home() {
 
       <section className="relative min-h-[820px] overflow-hidden">
         <div
-          className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-[#061946]"
+          className="absolute inset-0 bg-cover bg-center blur-xl scale-110 opacity-70"
+          style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
+        />
+        <div
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/belgrad-hero-premium.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021440]/78 via-[#021440]/35 to-[#021440]/10" />
